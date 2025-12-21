@@ -1,6 +1,6 @@
 # Arnaud Bougaham - Resume Website
 
-Personal resume website built with Hugo and hosted on GitHub Pages.
+Personal resume website built with Hugo and PaperMod theme, hosted on GitHub Pages.
 
 ## 🚀 Quick Start
 
@@ -11,30 +11,24 @@ Personal resume website built with Hugo and hosted on GitHub Pages.
 
 ### Local Development
 
-1. **Clone the repository** (after pushing to GitHub):
+1. **Clone the repository**:
    ```bash
    git clone https://github.com/ArnaudBougaham/ArnaudBougaham.github.io.git
    cd ArnaudBougaham.github.io
    ```
 
-2. **Add a Hugo Resume theme** (choose one):
-   
-   Option A - hugo-resume (recommended for resumes):
+2. **Initialize submodules** (to get the PaperMod theme):
    ```bash
-   git submodule add -b main https://github.com/eddiewebb/hugo-resume.git themes/hugo-resume
-   ```
-   
-   Option B - hugo-theme-codex (minimalist):
-   ```bash
-   git submodule add -b main https://github.com/jakewies/hugo-theme-codex.git themes/hugo-resume
-   ```
-   
-   Option C - hugo-resume-theme (modern):
-   ```bash
-   git submodule add -b main https://github.com/ojroques/hugo-resume-theme.git themes/hugo-resume
+   git submodule update --init --recursive
    ```
 
 3. **Run Hugo locally**:
+   ```powershell
+   # Windows (manual installation)
+   C:\Users\arb\Hugo\hugo.exe server -D
+   ```
+   
+   Or if Hugo is in your PATH:
    ```bash
    hugo server -D
    ```
@@ -51,86 +45,87 @@ Personal resume website built with Hugo and hosted on GitHub Pages.
    - `content/experience.md` - Work experience
    - `content/education.md` - Education background
    - `content/publications.md` - Publications and projects
+   - `content/awards.md` - Awards and recognition
+   - `content/skills.md` - Skills
+   - `content/certifications.md` - Licenses and certifications
 
-### Change Theme
+### Current Theme: PaperMod
 
-1. Find a Hugo theme you like at [Hugo Themes](https://themes.gohugo.io/)
-2. Add it as a submodule:
+This site uses [PaperMod](https://github.com/adityatelange/hugo-PaperMod), a fast, clean, responsive Hugo theme with:
+- Dark mode enabled by default
+- Profile mode for homepage
+- Modern navigation menu
+- Social icons support
+- Responsive design
+
+### Theme Configuration
+
+Key settings in `config.toml`:
+- `theme = "PaperMod"`
+- `defaultTheme = "dark"` (dark mode by default)
+- Profile mode enabled with 400x400px profile picture
+- Navigation menu: Home, Experience, Education, Publications, Awards, Skills, Certifications
+
+## 🌐 Deployment to GitHub Pages
+
+### Automatic Deployment (Already Configured)
+
+This repository is configured with GitHub Actions for automatic deployment:
+
+1. **Push your changes**:
    ```bash
-   git submodule add <theme-repo-url> themes/<theme-name>
-   ```
-3. Update `theme = "theme-name"` in `config.toml`
-
-## 🌐 Deployment to GitHub Pages (FREE!)
-
-### Automatic Deployment (Recommended)
-
-This repository is already configured with GitHub Actions for automatic deployment:
-
-1. **Create the repository** on GitHub:
-   - Repository name: `ArnaudBougaham.github.io`
-   - Make it **public** (required for free GitHub Pages)
-   - **Do NOT** initialize with README, .gitignore, or license
-
-2. **Push your code**:
-   ```bash
-   git init
    git add .
-   git commit -m "Initial commit"
-   git branch -M main
-   git remote add origin https://github.com/ArnaudBougaham/ArnaudBougaham.github.io.git
+   git commit -m "Update content"
+   git push
+   ```
+
+2. **GitHub Actions automatically**:
+   - Builds your Hugo site
+   - Deploys to GitHub Pages
+   - Your site updates at https://ArnaudBougaham.github.io
+
+### Initial Setup
+
+If setting up for the first time:
+
+1. **Create Personal Access Token**:
+   - Go to: https://github.com/settings/tokens
+   - Generate new token (classic) with `repo` and `workflow` scopes
+
+2. **Push to GitHub**:
+   ```bash
+   git remote add origin https://YOUR_TOKEN@github.com/ArnaudBougaham/ArnaudBougaham.github.io.git
    git push -u origin main
    ```
 
 3. **Enable GitHub Pages**:
-   - Go to your repository settings on GitHub
-   - Navigate to **"Pages"** in the left sidebar
-   - Under **"Source"**, select **"GitHub Actions"**
-   - The site will be automatically built and deployed on every push
-
-4. **Your site will be live at**: `https://ArnaudBougaham.github.io` (usually takes 1-2 minutes)
-
-### Manual Deployment (Alternative)
-
-If you prefer manual deployment:
-
-1. Build the site:
-   ```bash
-   hugo
-   ```
-
-2. Push the `public` folder to the `gh-pages` branch:
-   ```bash
-   cd public
-   git init
-   git add .
-   git commit -m "Deploy site"
-   git branch -M gh-pages
-   git remote add origin https://github.com/ArnaudBougaham/ArnaudBougaham.github.io.git
-   git push -u origin gh-pages
-   ```
-
-## 🎨 Popular Hugo Resume Themes
-
-- **[hugo-resume](https://github.com/eddiewebb/hugo-resume)** - Clean, professional resume theme
-- **[hugo-theme-codex](https://github.com/jakewies/hugo-theme-codex)** - Minimalist blog/resume theme
-- **[hugo-resume-theme](https://github.com/ojroques/hugo-resume-theme)** - Modern resume theme
-- **[hugo-theme-stack](https://github.com/CaiJimmy/hugo-theme-stack)** - Feature-rich theme
+   - Go to repository Settings → Pages
+   - Select "GitHub Actions" as source
+   - Save
 
 ## 📚 Resources
 
 - [Hugo Documentation](https://gohugo.io/documentation/)
+- [PaperMod Theme Wiki](https://github.com/adityatelange/hugo-PaperMod/wiki)
 - [GitHub Pages Documentation](https://docs.github.com/en/pages)
 - [Hugo Themes](https://themes.gohugo.io/)
 
 ## 💡 Tips
 
 - **Free Hosting**: GitHub Pages is completely free for public repositories
-- **Custom Domain**: You can add a custom domain (like `arnaudbougaham.io`) in GitHub Pages settings
+- **Custom Domain**: You can add a custom domain in GitHub Pages settings
 - **Automatic Updates**: With GitHub Actions, every push automatically rebuilds and deploys your site
 - **Version Control**: All your content is version-controlled with Git
+- **Local Testing**: Always test locally with `hugo server -D` before pushing changes
+
+## 🎨 Site Features
+
+- **Theme**: PaperMod (modern, fast, clean)
+- **Default Mode**: Dark mode
+- **Navigation**: Home, Experience, Education, Publications, Awards, Skills, Certifications
+- **Social Icons**: GitHub, LinkedIn, Email, ORCID, Research Portal
+- **Profile Mode**: Enabled with large profile picture
 
 ---
 
-**Note**: Remember to add your chosen theme as a Git submodule before deploying!
-
+**Live Site**: https://ArnaudBougaham.github.io

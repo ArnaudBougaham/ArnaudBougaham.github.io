@@ -15,26 +15,23 @@ Before starting, make sure you have:
 
 ## STEP 1: Install Hugo Extended ⚙️
 
-### Windows (Recommended: Chocolatey)
-```powershell
-# If you have Chocolatey installed:
-choco install hugo-extended
-```
+### Windows (Manual Installation - No PATH Required)
 
-### Windows (Manual Installation)
-1. Go to: https://github.com/gohugoio/hugo/releases
-2. Download the latest `hugo_extended_X.X.X_windows-amd64.zip`
-3. Extract the ZIP file
-4. Add Hugo to your PATH:
-   - Copy `hugo.exe` to a folder (e.g., `C:\Hugo\bin`)
-   - Add that folder to your Windows PATH environment variable
-   - Or just run Hugo from that folder
+1. **Download Hugo Extended**:
+   - Go to: https://github.com/gohugoio/hugo/releases
+   - Download the latest `hugo_extended_X.X.X_windows-amd64.zip` file
 
-### Verify Installation
-```powershell
-hugo version
-```
-You should see something like: `hugo v0.120.0+extended`
+2. **Extract Hugo**:
+   - Extract the ZIP file
+   - Copy `hugo.exe` to a folder you can access (e.g., `C:\Users\arb\Hugo`)
+
+3. **Verify Installation**:
+   ```powershell
+   C:\Users\arb\Hugo\hugo.exe version
+   ```
+   You should see something like: `hugo v0.153.1+extended`
+
+**Note**: If you put Hugo in a different folder, replace `C:\Users\arb\Hugo` with your folder path in all commands below.
 
 **✅ Checkpoint**: Hugo is installed and working
 
@@ -43,8 +40,8 @@ You should see something like: `hugo v0.120.0+extended`
 ## STEP 2: Add Your Profile Photo 📸
 
 1. **Find your profile photo** (professional headshot recommended)
-2. **Copy it** to: `C:\Users\arb\hugo-resume-site\static\images\photos\`
-3. **Rename it** to: `profile.jpg` (or `profile.png`)
+2. **Copy it** to: `C:\Users\arb\hugo-resume-site\static\images\photos\profile.jpg`
+3. **Also copy it** to: `C:\Users\arb\hugo-resume-site\assets\img\avatar.png` (for PaperMod theme)
 
 **Note**: If you don't have a photo yet, you can skip this and add it later. The site will still work.
 
@@ -52,34 +49,15 @@ You should see something like: `hugo v0.120.0+extended`
 
 ---
 
-## STEP 3: Choose and Add a Hugo Theme 🎨
+## STEP 3: Add PaperMod Theme 🎨
 
-You need to add a Hugo theme. Here are 3 great options:
+This site uses the **PaperMod** theme - a modern, fast, and clean Hugo theme.
 
-### Option A: hugo-resume (Best for Resumes) ⭐ RECOMMENDED
 ```powershell
 cd C:\Users\arb\hugo-resume-site
 git init
-git submodule add -b main https://github.com/eddiewebb/hugo-resume.git themes/hugo-resume
+git submodule add https://github.com/adityatelange/hugo-PaperMod.git themes/PaperMod
 ```
-
-### Option B: hugo-theme-codex (Minimalist & Clean)
-```powershell
-cd C:\Users\arb\hugo-resume-site
-git init
-git submodule add -b main https://github.com/jakewies/hugo-theme-codex.git themes/hugo-resume
-```
-
-### Option C: hugo-resume-theme (Modern Design)
-```powershell
-cd C:\Users\arb\hugo-resume-site
-git init
-git submodule add -b main https://github.com/ojroques/hugo-resume-theme.git themes/hugo-resume
-```
-
-**Important**: 
-- The theme name in `config.toml` is set to `hugo-resume`
-- Make sure your submodule uses that directory name, OR update `config.toml` line 4 to match your theme name
 
 **✅ Checkpoint**: Theme is added as a submodule
 
@@ -90,7 +68,7 @@ git submodule add -b main https://github.com/ojroques/hugo-resume-theme.git them
 ### Start the Hugo Server
 ```powershell
 cd C:\Users\arb\hugo-resume-site
-hugo server -D
+C:\Users\arb\Hugo\hugo.exe server -D
 ```
 
 You should see:
@@ -101,13 +79,15 @@ Web Server is available at http://localhost:1313/
 ### View Your Site
 1. Open your web browser
 2. Go to: **http://localhost:1313/**
-3. You should see your resume site!
+3. You should see your resume site with PaperMod theme!
 
 ### What to Check:
 - [ ] Site loads without errors
 - [ ] Your profile photo appears (if you added one)
-- [ ] All sections are visible (About, Experience, Education, etc.)
+- [ ] All sections are visible (Home, Experience, Education, Publications, Awards, Skills, Certifications)
 - [ ] Navigation menu works
+- [ ] Dark mode is enabled by default
+- [ ] Social icons appear (GitHub, LinkedIn, Email, ORCID, Research Portal)
 - [ ] Content looks good
 
 ### Make Adjustments
@@ -134,7 +114,19 @@ Press `Ctrl + C` in the terminal when done testing.
    - ❌ Choose a license
 5. Click **"Create repository"**
 
-### 5.2 Push Your Code to GitHub
+### 5.2 Create Personal Access Token
+GitHub requires a Personal Access Token (not password) for authentication:
+
+1. Go to: https://github.com/settings/tokens
+2. Click **"Generate new token"** → **"Generate new token (classic)"**
+3. Name it (e.g., "Hugo Site Deploy")
+4. Select these scopes:
+   - ✅ `repo` (full control of private repositories)
+   - ✅ `workflow` (Update GitHub Action workflows)
+5. Click **"Generate token"**
+6. **Copy the token immediately** (you won't see it again!)
+
+### 5.3 Push Your Code to GitHub
 ```powershell
 cd C:\Users\arb\hugo-resume-site
 
@@ -145,17 +137,21 @@ git init
 git add .
 
 # Commit
-git commit -m "Initial commit: Hugo resume site"
+git commit -m "Initial commit: Hugo resume site with PaperMod theme"
 
-# Add remote (replace with your GitHub username if different)
-git remote add origin https://github.com/ArnaudBougaham/ArnaudBougaham.github.io.git
+# Add remote with your token (replace YOUR_TOKEN with your actual token)
+git remote add origin https://YOUR_TOKEN@github.com/ArnaudBougaham/ArnaudBougaham.github.io.git
 
 # Push to GitHub
 git branch -M main
 git push -u origin main
 ```
 
-**Note**: You'll be asked for your GitHub username and password (or use a Personal Access Token)
+**Note**: If the repository already exists and has content, you may need to pull first:
+```powershell
+git pull origin main --allow-unrelated-histories
+git push -u origin main
+```
 
 **✅ Checkpoint**: Code is on GitHub
 
@@ -174,6 +170,7 @@ git push -u origin main
 - GitHub Actions will automatically build your site
 - This takes 1-3 minutes
 - You can watch the progress: Click **Actions** tab in your repository
+- If no workflow runs automatically, click **"Run workflow"** to trigger it manually
 
 ### 6.3 Your Site is Live! 🎉
 Visit: **https://ArnaudBougaham.github.io**
@@ -192,7 +189,7 @@ cd C:\Users\arb\hugo-resume-site
 # Make your changes (edit files, add photos, etc.)
 
 # Test locally first
-hugo server -D
+C:\Users\arb\Hugo\hugo.exe server -D
 
 # When ready, commit and push
 git add .
@@ -207,23 +204,30 @@ GitHub Actions will automatically rebuild and deploy your site!
 ## 🆘 Troubleshooting
 
 ### Hugo not found
-- Make sure Hugo is in your PATH, or run it from the installation folder
-- Verify with: `hugo version`
+- If you installed Hugo manually, use the full path: `C:\Users\arb\Hugo\hugo.exe server -D`
+- Replace `C:\Users\arb\Hugo` with wherever you installed Hugo
+- Verify with: `C:\Users\arb\Hugo\hugo.exe version`
 
 ### Theme not showing
 - Make sure you added the theme as a submodule
-- Check that `theme = "hugo-resume"` in `config.toml` matches your theme folder name
+- Check that `theme = "PaperMod"` in `config.toml` matches your theme folder name
 - Try: `git submodule update --init --recursive`
 
 ### Site not building on GitHub
 - Check the **Actions** tab for error messages
 - Make sure you selected "GitHub Actions" as the source (not "Deploy from a branch")
 - Verify your `config.toml` has no syntax errors
+- Ensure your Personal Access Token has `workflow` scope
 
 ### Images not showing
-- Make sure photos are in `static/images/photos/`
+- Make sure photos are in `static/images/photos/` for content
+- Profile photo should also be in `assets/img/avatar.png` for PaperMod theme
 - Check file names match exactly (case-sensitive)
 - Verify file paths in `config.toml` and content files
+
+### Authentication errors
+- Make sure your Personal Access Token has both `repo` and `workflow` scopes
+- Update the remote URL with your token: `git remote set-url origin https://YOUR_TOKEN@github.com/ArnaudBougaham/ArnaudBougaham.github.io.git`
 
 ---
 
@@ -231,9 +235,9 @@ GitHub Actions will automatically rebuild and deploy your site!
 
 | Step | Command | What It Does |
 |------|---------|--------------|
-| Test locally | `hugo server -D` | View site at localhost:1313 |
-| Build site | `hugo` | Generate static files in `public/` |
-| Add theme | `git submodule add <theme-url> themes/hugo-resume` | Add Hugo theme |
+| Test locally | `C:\Users\arb\Hugo\hugo.exe server -D` | View site at localhost:1313 |
+| Build site | `C:\Users\arb\Hugo\hugo.exe` | Generate static files in `public/` |
+| Add theme | `git submodule add https://github.com/adityatelange/hugo-PaperMod.git themes/PaperMod` | Add PaperMod theme |
 | Push changes | `git add . && git commit -m "msg" && git push` | Update live site |
 
 ---
@@ -242,17 +246,27 @@ GitHub Actions will automatically rebuild and deploy your site!
 
 Before going live, make sure:
 - [ ] Hugo is installed and working
-- [ ] Theme is added
+- [ ] PaperMod theme is added
 - [ ] Profile photo is added (optional)
-- [ ] Site looks good locally (`hugo server -D`)
+- [ ] Site looks good locally (`C:\Users\arb\Hugo\hugo.exe server -D`)
 - [ ] GitHub repository is created
+- [ ] Personal Access Token is created with `repo` and `workflow` scopes
 - [ ] Code is pushed to GitHub
 - [ ] GitHub Pages is enabled with "GitHub Actions"
 - [ ] Site is live at https://ArnaudBougaham.github.io
 
 ---
 
+## 🎨 Current Site Features
+
+- **Theme**: PaperMod (modern, fast, clean)
+- **Default Mode**: Dark mode
+- **Navigation Menu**: Home, Experience, Education, Publications, Awards, Skills, Certifications
+- **Social Icons**: GitHub, LinkedIn, Email, ORCID, Research Portal
+- **Profile Mode**: Enabled with large profile picture (400x400px)
+
+---
+
 **🎉 Congratulations!** Your professional resume site is now live!
 
 **Need help?** Check the `README.md` and `SETUP.md` files for more details.
-

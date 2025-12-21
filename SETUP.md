@@ -2,7 +2,7 @@
 
 ## Step 1: Install Hugo
 
-**Windows (Manual Installation)**:
+**Windows (Manual Installation - No PATH Required)**:
 1. Go to: https://github.com/gohugoio/hugo/releases
 2. Download the latest `hugo_extended_X.X.X_windows-amd64.zip`
 3. Extract and copy `hugo.exe` to a folder (e.g., `C:\Users\arb\Hugo`)
@@ -10,28 +10,22 @@
 
 **Note**: Replace `C:\Users\arb\Hugo` with your Hugo installation folder.
 
-## Step 2: Choose and Add a Theme
+## Step 2: Add PaperMod Theme
 
-You need to add a Hugo theme. Here are recommended options:
+This site uses the **PaperMod** theme:
 
-### Option A: hugo-resume (Best for Resumes)
 ```powershell
-git submodule add -b master https://github.com/eddiewebb/hugo-resume.git themes/hugo-resume
+cd C:\Users\arb\hugo-resume-site
+git init
+git submodule add https://github.com/adityatelange/hugo-PaperMod.git themes/PaperMod
 ```
 
-### Option B: hugo-theme-codex (Minimalist)
-```powershell
-git submodule add -b main https://github.com/jakewies/hugo-theme-codex.git themes/hugo-resume
-```
+## Step 3: Add Profile Photo
 
-### Option C: hugo-resume-theme (Modern)
-```powershell
-git submodule add -b main https://github.com/ojroques/hugo-resume-theme.git themes/hugo-resume
-```
+1. Copy your profile photo to: `static/images/photos/profile.jpg`
+2. Also copy it to: `assets/img/avatar.png` (for PaperMod theme)
 
-**Note**: The theme name in `config.toml` is set to `hugo-resume`, so make sure your submodule uses that directory name, or update `config.toml` to match.
-
-## Step 3: Test Locally
+## Step 4: Test Locally
 
 ```powershell
 C:\Users\arb\Hugo\hugo.exe server -D
@@ -39,7 +33,7 @@ C:\Users\arb\Hugo\hugo.exe server -D
 
 Visit http://localhost:1313 to see your site!
 
-## Step 4: Deploy to GitHub Pages (FREE!)
+## Step 5: Deploy to GitHub Pages (FREE!)
 
 1. **Create GitHub Repository**:
    - Go to https://github.com/new
@@ -47,31 +41,35 @@ Visit http://localhost:1313 to see your site!
    - Make it **PUBLIC** (required for free hosting)
    - **DO NOT** initialize with README, .gitignore, or license
 
-2. **Push Your Code**:
+2. **Create Personal Access Token**:
+   - Go to: https://github.com/settings/tokens
+   - Generate new token (classic) with `repo` and `workflow` scopes
+   - Copy the token
+
+3. **Push Your Code**:
    ```powershell
-   git init
    git add .
    git commit -m "Initial commit"
    git branch -M main
-   git remote add origin https://github.com/ArnaudBougaham/ArnaudBougaham.github.io.git
+   git remote add origin https://YOUR_TOKEN@github.com/ArnaudBougaham/ArnaudBougaham.github.io.git
    git push -u origin main
    ```
+   Replace `YOUR_TOKEN` with your Personal Access Token.
 
-3. **Enable GitHub Pages**:
+4. **Enable GitHub Pages**:
    - Go to your repository on GitHub
    - Click **Settings** → **Pages**
    - Under **Source**, select **"GitHub Actions"**
    - Save
 
-4. **Wait 1-2 minutes**, then visit: **https://ArnaudBougaham.github.io**
+5. **Wait 1-2 minutes**, then visit: **https://ArnaudBougaham.github.io**
 
-## Step 5: Customize
+## Step 6: Customize
 
 - Edit `config.toml` for site settings
 - Edit files in `content/` for your information
-- Each theme has different customization options - check the theme's documentation
+- Current theme: **PaperMod** (modern, fast, with dark mode default)
 
 ## 🎉 That's it!
 
 Your resume site is now live and will automatically update whenever you push changes to GitHub!
-
