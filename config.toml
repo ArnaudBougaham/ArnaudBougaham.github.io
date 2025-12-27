@@ -64,7 +64,7 @@ theme = 'PaperMod'
         title = "Research Portal"
       [[languages.en.params.socialIcons]]
         name = "cv"
-        url = "/Resume_ArnaudBougaham_2025-1.pdf"
+        url = "/Resume_ArnaudBougaham_2025_anon.pdf"
         title = "Download Resume (PDF)"
     [[languages.en.menu.main]]
       identifier = "home"

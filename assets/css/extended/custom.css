@@ -76,7 +76,7 @@
         margin: 0 !important;
         padding: 0 !important;
         padding-left: 0 !important;
-        font-size: 12px !important;
+        font-size: 11px !important;
     }
     
     #menu li {
@@ -86,7 +86,7 @@
     }
     
     #menu a {
-        font-size: 12px !important;
+        font-size: 11px !important;
         padding: 3px 4px !important;
     }
     
@@ -102,11 +102,11 @@
 /* Extra small screens: smaller font */
 @media screen and (max-width: 480px) {
     #menu {
-        font-size: 11px !important;
+        font-size: 10px !important;
     }
     
     #menu a {
-        font-size: 11px !important;
+        font-size: 10px !important;
         padding: 2px 3px !important;
     }
     
@@ -121,7 +121,7 @@
 
 /* Slightly reduce font size for French menu items if needed to maintain format */
 html[lang="fr"] #menu a {
-    font-size: 15px;
+    font-size: 14px;
 }
 
 /* Ensure logo area (title, separator, language switcher) stays on one line */
