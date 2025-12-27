@@ -5,7 +5,20 @@
     height: 600px !important;
     object-fit: cover;
     object-position: center;
-    /* Image resized to 1200x1200 by Hugo for high quality, displayed at 600x600 (2x for retina) */
+    border-radius: 50% !important;
+    /* Image resized to 1200x1560 by Hugo for high quality, displayed at 600x600 (2x for retina) */
+}
+
+/* Mobile responsive: smaller profile picture, ensure it stays circular */
+@media (max-width: 768px) {
+    .profile .profile_inner img,
+    .profile img {
+        width: 300px !important;
+        height: 300px !important;
+        max-width: 90vw !important;
+        max-height: 90vw !important;
+        border-radius: 50% !important;
+    }
 }
 
 /* Ensure menu stays on one line and maintains consistent format for both languages */
@@ -22,6 +35,38 @@
 #menu li {
     white-space: nowrap !important;
     flex-shrink: 0 !important;
+}
+
+/* Mobile responsive: menu wraps and doesn't cause horizontal scroll */
+@media (max-width: 768px) {
+    .nav {
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+    }
+    
+    #menu {
+        flex-wrap: wrap !important;
+        white-space: normal !important;
+        overflow-x: visible !important;
+        justify-content: center !important;
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+    
+    #menu li {
+        white-space: normal !important;
+        margin: 4px 8px !important;
+    }
+    
+    .logo {
+        width: 100% !important;
+        justify-content: center !important;
+        margin-bottom: 10px !important;
+    }
+    
+    .logo-switches {
+        margin-left: 0 !important;
+    }
 }
 
 /* Slightly reduce font size for French menu items if needed to maintain format */
