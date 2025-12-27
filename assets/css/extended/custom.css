@@ -1,0 +1,52 @@
+/* Custom styles for profile picture - maintain original scaling in circle */
+.profile .profile_inner img,
+.profile img {
+    width: 600px !important;
+    height: 600px !important;
+    object-fit: cover;
+    object-position: center;
+    /* Image is resized to 800x800 by Hugo for high quality, displayed at 400x400 for crisp rendering */
+}
+
+/* Ensure menu stays on one line and maintains consistent format for both languages */
+.nav {
+    flex-wrap: nowrap !important;
+}
+
+#menu {
+    flex-shrink: 0 !important;
+    white-space: nowrap !important;
+    overflow-x: visible !important;
+}
+
+#menu li {
+    white-space: nowrap !important;
+    flex-shrink: 0 !important;
+}
+
+/* Slightly reduce font size for French menu items if needed to maintain format */
+html[lang="fr"] #menu a {
+    font-size: 15px;
+}
+
+/* Ensure logo area (title, separator, language switcher) stays on one line */
+.logo {
+    display: flex !important;
+    align-items: center !important;
+    flex-wrap: nowrap !important;
+    white-space: nowrap !important;
+}
+
+.logo a {
+    white-space: nowrap !important;
+    flex-shrink: 0 !important;
+}
+
+.logo-switches {
+    display: inline-flex !important;
+    align-items: center !important;
+    flex-wrap: nowrap !important;
+    white-space: nowrap !important;
+    margin-left: auto !important;
+}
+

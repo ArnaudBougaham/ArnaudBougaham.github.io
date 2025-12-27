@@ -2,9 +2,17 @@
 title: "Licenses & Certifications"
 date: 2025-01-27
 draft: false
+translationKey: "certifications"
 ---
 
 ## Licenses & Certifications
+
+### Hands on AI University Certificate
+**Issuing Organization:** University of Mons (UMons)  
+**Issue Date:** April 2022
+**Description:** University certificate in Hands of AI, focusing on practical applications of artificial intelligence.
+
+---
 
 ### Applied Software Engineering Fundamentals Specialization
 **Issuing Organization:** IBM  

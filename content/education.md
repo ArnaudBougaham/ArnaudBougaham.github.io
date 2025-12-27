@@ -2,13 +2,14 @@
 title: "Education"
 date: 2025-01-27
 draft: false
+translationKey: "education"
 ---
 
 ## Education
 
 ### Ph.D. in Sciences
 **University of Namur, Belgium**
-*2020 - Present*
+*2020 - 2025*
 
 **Supervisors:**
 - Prof. Benoît Frénay
@@ -24,8 +25,16 @@ draft: false
 
 **Thesis Topic:** "Generative Models and Quality Constraints for Anomaly Detection: Application to Industrial and Medical Images"
 
+**Research Activities:**
+- **Guest Researcher at LIRMM** (Laboratoire d'Informatique, de Robotique et de Microélectronique de Montpellier), Montpellier, France
+  - *July 1-31, 2024*
+  - Research focus: Anomaly detection methods. Application to the characterization of consciousness of patients in deep coma
+  - International research collaboration and knowledge exchange
+  - [LIRMM Guest Researchers Page](https://www.lirmm.fr/icar/guest.html)
+
 ### Master's Degree in Electronic and Telecommunication
 **Polytechnic University of Catalonia (Universitat Politècnica de Catalunya)**
+*2006 - 2007*
 Barcelona, Spain
 
 - Specialized in electronic systems and telecommunications
@@ -33,6 +42,7 @@ Barcelona, Spain
 
 ### Bachelor's Degree in Information Sciences and Communication Technologies
 **Polytechnic University of Valenciennes (Université Polytechnique de Valenciennes)**
+*2003 - 2006*
 Valenciennes, France
 
 - Foundation in information and communication technologies

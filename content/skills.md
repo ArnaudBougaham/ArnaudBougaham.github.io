@@ -2,6 +2,7 @@
 title: "Skills & Expertise"
 date: 2025-01-27
 draft: false
+translationKey: "skills"
 ---
 
 ## Technical Skills
@@ -19,7 +20,7 @@ draft: false
 - **Applications**: Real-time quality control, Production monitoring, Medical diagnosis support
 
 ### Programming & Tools
-- **Languages**: Python, MATLAB
+- **Languages**: Python
 - **ML Frameworks**: PyTorch, TensorFlow, scikit-learn
 - **Development Tools**: Jupyter Notebooks, Git, Linux/Unix
 - **Data Analysis**: NumPy, Pandas, Matplotlib, Seaborn

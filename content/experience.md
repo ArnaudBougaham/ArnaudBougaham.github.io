@@ -2,6 +2,7 @@
 title: "Experience"
 date: 2025-01-27
 draft: false
+translationKey: "experience"
 ---
 
 ## Professional Experience
@@ -34,7 +35,7 @@ draft: false
 
 ### Ph.D. in Sciences
 **University of Namur, Belgium**
-*2020 - Present*
+*2020 - 2025*
 
 **Supervisors:** Prof. Benoît Frénay and Prof. Isabelle Linden
 
@@ -48,12 +49,13 @@ draft: false
 - Quality-constrained anomaly detection through partial AUC approximations
 - Cycle-consistent adversarial networks for cross-domain anomaly detection
 - Critical binary classification in high-stakes industrial and medical applications
-- Generative models for imbalanced real-world industrial datasets
+- Generative models for imbalanced real-world datasets
 
 ## Teaching Experience
 
 ### Lecturer
 **Engineering Schools and Universities**
+*UPHF INSA HdF, UMontpellier Polytech, UMons, UNamur, IUT Béziers*
 *Current*
 
 - Teaching AI & Big Data courses
@@ -64,6 +66,6 @@ draft: false
 ## Professional Affiliations
 
 - **Namur Digital Institute (NaDI)**: Active member contributing to digital technology research
-- **TRAIL Factory Network**: Member of Factory of the Future community
-- **University of Namur Research Portal**: [Profile](https://researchportal.unamur.be/en/persons/abougaha/)
+- **TRAIL Factory Network**: Member of TRusted AI Labs community: [TRAIL Profile](https://factory.trail.ac/en/user/arnaud/bougaham)
+- **University of Namur Research Portal**: [PURE Profile](https://researchportal.unamur.be/en/persons/abougaha/)
 

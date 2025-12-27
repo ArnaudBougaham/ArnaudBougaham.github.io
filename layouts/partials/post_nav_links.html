@@ -1,0 +1,38 @@
+{{- /* Custom post navigation - only show prev/next for actual content pages in menu order */ -}}
+{{- $pageOrder := slice "experience" "education" "publications" "awards" "skills" "certifications" -}}
+{{- $pages := slice -}}
+{{- range $pageOrder -}}
+  {{- $page := site.GetPage (printf "/%s" .) -}}
+  {{- if and $page (ne $page.Kind "404") -}}
+    {{- $pages = $pages | append $page -}}
+  {{- end -}}
+{{- end -}}
+{{- if and (gt (len $pages) 1) -}}
+{{- $currentIndex := -1 -}}
+{{- $currentPageName := .File.LogicalName | replaceRE "\\.md$" "" -}}
+{{- range $i, $pageName := $pageOrder -}}
+  {{- if eq $currentPageName $pageName -}}
+    {{- $currentIndex = $i -}}
+  {{- end -}}
+{{- end -}}
+{{- if ge $currentIndex 0 -}}
+<nav class="paginav">
+  {{- if gt $currentIndex 0 -}}
+  {{- $prevPage := index $pages (sub $currentIndex 1) -}}
+  <a class="prev" href="{{ $prevPage.Permalink }}">
+    <span class="title">« {{ i18n "prev_page" }}</span>
+    <br>
+    <span>{{- $prevPage.Title -}}</span>
+  </a>
+  {{- end -}}
+  {{- if lt $currentIndex (sub (len $pages) 1) -}}
+  {{- $nextPage := index $pages (add $currentIndex 1) -}}
+  <a class="next" href="{{ $nextPage.Permalink }}">
+    <span class="title">{{ i18n "next_page" }} »</span>
+    <br>
+    <span>{{- $nextPage.Title -}}</span>
+  </a>
+  {{- end -}}
+</nav>
+{{- end -}}
+{{- end }}
