@@ -37,35 +37,73 @@
     flex-shrink: 0 !important;
 }
 
-/* Mobile responsive: menu wraps and doesn't cause horizontal scroll */
-@media (max-width: 768px) {
+/* Mobile responsive: two-line layout - logo on first line, menu on second line */
+@media screen and (max-width: 768px) {
     .nav {
+        flex-direction: column !important;
         flex-wrap: wrap !important;
-        justify-content: center !important;
-    }
-    
-    #menu {
-        flex-wrap: wrap !important;
-        white-space: normal !important;
-        overflow-x: visible !important;
-        justify-content: center !important;
-        width: 100% !important;
-        max-width: 100% !important;
-    }
-    
-    #menu li {
-        white-space: normal !important;
-        margin: 4px 8px !important;
+        align-items: center !important;
     }
     
     .logo {
         width: 100% !important;
         justify-content: center !important;
         margin-bottom: 10px !important;
+        flex-wrap: nowrap !important;
     }
     
     .logo-switches {
-        margin-left: 0 !important;
+        margin-left: auto !important;
+    }
+    
+    #menu {
+        width: 100% !important;
+        flex-wrap: nowrap !important;
+        white-space: nowrap !important;
+        overflow-x: hidden !important;
+        justify-content: center !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        font-size: 11px !important;
+    }
+    
+    #menu li {
+        white-space: nowrap !important;
+        flex-shrink: 1 !important;
+        margin-inline-start: 5px !important;
+    }
+    
+    #menu a {
+        font-size: 11px !important;
+        padding: 3px 4px !important;
+    }
+    
+    .logo a {
+        font-size: 18px !important;
+    }
+    
+    .logo-switches {
+        font-size: 14px !important;
+    }
+}
+
+/* Extra small screens: smaller font */
+@media screen and (max-width: 480px) {
+    #menu {
+        font-size: 10px !important;
+    }
+    
+    #menu a {
+        font-size: 10px !important;
+        padding: 2px 3px !important;
+    }
+    
+    #menu li {
+        margin-inline-start: 4px !important;
+    }
+    
+    .logo a {
+        font-size: 16px !important;
     }
 }
 
