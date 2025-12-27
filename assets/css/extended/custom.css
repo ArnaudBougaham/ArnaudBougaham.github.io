@@ -76,7 +76,7 @@
         margin: 0 !important;
         padding: 0 !important;
         padding-left: 0 !important;
-        font-size: 13px !important;
+        font-size: 12px !important;
     }
     
     #menu li {
@@ -86,7 +86,7 @@
     }
     
     #menu a {
-        font-size: 13px !important;
+        font-size: 12px !important;
         padding: 3px 4px !important;
     }
     
@@ -102,11 +102,11 @@
 /* Extra small screens: smaller font */
 @media screen and (max-width: 480px) {
     #menu {
-        font-size: 12px !important;
+        font-size: 11px !important;
     }
     
     #menu a {
-        font-size: 12px !important;
+        font-size: 11px !important;
         padding: 2px 3px !important;
     }
     
