@@ -70,19 +70,43 @@ Key settings in `config.toml`:
 
 ### Automatic Deployment (Already Configured)
 
-This repository is configured with GitHub Actions for automatic deployment:
+This repository is configured with **GitHub Actions** for automatic deployment. The workflow file is located at `.github/workflows/gh-pages.yml`.
+
+#### How It Works
 
 1. **Push your changes**:
    ```bash
    git add .
    git commit -m "Update content"
-   git push
+   git push origin main
    ```
 
 2. **GitHub Actions automatically**:
-   - Builds your Hugo site
-   - Deploys to GitHub Pages
-   - Your site updates at https://ArnaudBougaham.github.io
+   - Triggers on every push to the `main` branch
+   - Checks out your repository and submodules (including the PaperMod theme)
+   - Sets up Hugo Extended (latest version)
+   - Builds your site with `hugo --minify` (production mode)
+   - Uploads the built site to GitHub Pages
+   - Deploys to https://ArnaudBougaham.github.io
+
+3. **Deployment Time**: Usually takes 1-3 minutes after pushing
+
+#### Checking Deployment Status
+
+1. Go to your repository: https://github.com/ArnaudBougaham/ArnaudBougaham.github.io
+2. Click the **"Actions"** tab
+3. You'll see a list of workflow runs
+4. Click on the latest run to see detailed logs
+5. A green checkmark ✅ means deployment succeeded
+6. A red X ❌ means there was an error (check the logs)
+
+#### What Gets Deployed
+
+The workflow builds your site and deploys:
+- All content files (`.md` files from `content/`)
+- All static assets (images, CSS, etc.)
+- The built HTML/CSS/JS files
+- Theme files (PaperMod)
 
 ### Initial Setup
 
@@ -90,7 +114,10 @@ If setting up for the first time:
 
 1. **Create Personal Access Token**:
    - Go to: https://github.com/settings/tokens
-   - Generate new token (classic) with `repo` and `workflow` scopes
+   - Click "Generate new token (classic)"
+   - Name it (e.g., "GitHub Pages Deployment")
+   - Select scopes: `repo` and `workflow` (both required!)
+   - Generate and copy the token
 
 2. **Push to GitHub**:
    ```bash
@@ -100,8 +127,28 @@ If setting up for the first time:
 
 3. **Enable GitHub Pages**:
    - Go to repository Settings → Pages
-   - Select "GitHub Actions" as source
+   - Under "Source", select **"GitHub Actions"** (not "Deploy from a branch")
    - Save
+
+### Workflow File Details
+
+The GitHub Actions workflow (`.github/workflows/gh-pages.yml`) performs these steps:
+
+1. **Checkout**: Gets your code and theme submodules
+2. **Setup Hugo**: Installs Hugo Extended (required for image processing)
+3. **Setup Pages**: Configures GitHub Pages environment
+4. **Build**: Runs `hugo --minify` to generate optimized static files
+5. **Upload**: Uploads the `public/` directory as an artifact
+6. **Deploy**: Deploys the artifact to GitHub Pages
+
+### Troubleshooting Deployment
+
+- **Build fails**: Check the Actions tab for error messages, usually related to:
+  - Syntax errors in `config.toml`
+  - Missing files or broken links
+  - Theme submodule issues
+- **Site not updating**: Wait a few minutes, clear browser cache, or check Actions tab
+- **Authentication errors**: Ensure your Personal Access Token has `workflow` scope
 
 ## 📚 Resources
 

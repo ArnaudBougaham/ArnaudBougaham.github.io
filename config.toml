@@ -44,8 +44,8 @@ theme = 'PaperMod'
         subtitle = "Research Scientist | Ph.D. | Operational Technologies Engineer"
         imageUrl = "images/photos/profile.jpg"
         imageTitle = "Arnaud Bougaham"
-        imageWidth = 800
-        imageHeight = 800
+        imageWidth = 1200
+        imageHeight = 1560
       [[languages.en.params.socialIcons]]
         name = "github"
         url = "https://github.com/ArnaudBougaham"
@@ -132,8 +132,8 @@ theme = 'PaperMod'
         subtitle = "Chercheur Scientifique | Docteur | Ingénieur Technologies Opérationnelles"
         imageUrl = "images/photos/profile.jpg"
         imageTitle = "Arnaud Bougaham"
-        imageWidth = 800
-        imageHeight = 800
+        imageWidth = 1200
+        imageHeight = 1560
       [[languages.fr.params.socialIcons]]
         name = "github"
         url = "https://github.com/ArnaudBougaham"
