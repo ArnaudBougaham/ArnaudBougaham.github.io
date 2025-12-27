@@ -19,6 +19,16 @@
         max-height: 90vw !important;
         border-radius: 50% !important;
     }
+    
+    .main .profile {
+        min-height: auto !important;
+        padding-top: 20px !important;
+        padding-bottom: 20px !important;
+    }
+    
+    .profile .profile_inner {
+        gap: 15px !important;
+    }
 }
 
 /* Ensure menu stays on one line and maintains consistent format for both languages */
@@ -47,9 +57,10 @@
     
     .logo {
         width: 100% !important;
-        justify-content: center !important;
+        justify-content: flex-start !important;
         margin-bottom: 10px !important;
         flex-wrap: nowrap !important;
+        padding-left: 0 !important;
     }
     
     .logo-switches {
@@ -61,10 +72,11 @@
         flex-wrap: nowrap !important;
         white-space: nowrap !important;
         overflow-x: hidden !important;
-        justify-content: center !important;
+        justify-content: flex-start !important;
         margin: 0 !important;
         padding: 0 !important;
-        font-size: 11px !important;
+        padding-left: 0 !important;
+        font-size: 13px !important;
     }
     
     #menu li {
@@ -74,7 +86,7 @@
     }
     
     #menu a {
-        font-size: 11px !important;
+        font-size: 13px !important;
         padding: 3px 4px !important;
     }
     
@@ -90,11 +102,11 @@
 /* Extra small screens: smaller font */
 @media screen and (max-width: 480px) {
     #menu {
-        font-size: 10px !important;
+        font-size: 12px !important;
     }
     
     #menu a {
-        font-size: 10px !important;
+        font-size: 12px !important;
         padding: 2px 3px !important;
     }
     
