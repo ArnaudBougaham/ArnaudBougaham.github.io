@@ -30,6 +30,13 @@ translationKey: "awards"
 - Membre du réseau TRAIL Factory of the Future
 - Présentateur régulier lors de conférences académiques (Mardi des Chercheurs)
 
+### Reviewer Actif
+- **ESANN** (European Symposium on Artificial Neural Networks, Computational Intelligence and Machine Learning)
+- **IDA** (International Symposium on Intelligent Data Analysis)
+- **ECAI** (European Conference on Artificial Intelligence)
+- **IJCNN** (International Joint Conference on Neural Networks)
+- **HumaLearn Lab** relectures internes d'activités de doctorants
+
 ### Médias & Diffusion
 - Présenté dans la série YouTube "Draw My Ph.D." discutant de l'IA dans les applications industrielles
 - Invité sur le podcast "Thèse ? Antithèse ? Synthèse !"

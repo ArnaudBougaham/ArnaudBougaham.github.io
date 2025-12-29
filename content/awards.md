@@ -30,6 +30,13 @@ translationKey: "awards"
 - Member of the TRAIL Factory of the Future network
 - Regular presenter at academic conferences (Mardi des Chercheurs)
 
+### Active Reviewer
+- **ESANN** (European Symposium on Artificial Neural Networks, Computational Intelligence and Machine Learning)
+- **IDA** (International Symposium on Intelligent Data Analysis)
+- **ECAI** (European Conference on Artificial Intelligence)
+- **IJCNN** (International Joint Conference on Neural Networks)
+- **HumaLearn Lab** internal PhD activities reviews
+
 ### Media & Outreach
 - Featured in "Draw My Ph.D." YouTube series discussing AI in industrial applications
 - Guest on podcast "Thèse ? Antithèse ? Synthèse !"

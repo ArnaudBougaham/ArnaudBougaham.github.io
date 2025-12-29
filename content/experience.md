@@ -53,7 +53,7 @@ translationKey: "experience"
 
 ## Teaching Experience
 
-### Lecturer
+### Contract Lecturer
 **Engineering Schools and Universities**
 *UPHF INSA HdF, UMontpellier Polytech, UMons, UNamur, IUT Béziers*
 *Current*
