@@ -27,14 +27,25 @@ translationKey: "education"
 
 **Research Activities:**
 - **Guest Researcher at LIRMM** (Laboratoire d'Informatique, de Robotique et de Microélectronique de Montpellier), Montpellier, France
-  - *July 1-31, 2024*
+  - *July 2024*
   - Research focus: Anomaly detection methods. Application to the characterization of consciousness of patients in deep coma
   - International research collaboration and knowledge exchange
   - [LIRMM Guest Researchers Page](https://www.lirmm.fr/icar/guest.html)
 
+**Specialization MOOCs & Certifications:**
+- **Applied Software Engineering Fundamentals Specialization** - IBM (February 2024)
+- **AI for Medicine Specialization** - DeepLearning.AI (January 2024)
+- **Machine Learning Engineering for Production (MLOps) Specialization** - DeepLearning.AI (December 2023)
+- **Mathematics for Machine Learning and Data Science Specialization** - Coursera (September 2023)
+- **Generative Adversarial Networks (GANs) Specialization** - Coursera (June 2023)
+- **Deep Learning Specialization** - Coursera (March 2023)
+- **Machine Learning Specialization** - Coursera (December 2022)
+- **Mathematics for Machine Learning Specialization** - Imperial College London (October 2022)
+- **Hands on AI University Certificate** - University of Mons (UMons) (April 2022)
+
 ### Master's Degree in Electronic and Telecommunication
 **Polytechnic University of Catalonia (Universitat Politècnica de Catalunya)**
-*2006 - 2007*
+*2006 - 2007* ERASMUS
 Barcelona, Spain
 
 - Specialized in electronic systems and telecommunications
@@ -47,6 +58,10 @@ Valenciennes, France
 
 - Foundation in information and communication technologies
 - Computer science and engineering fundamentals
+
+---
+
+*All degree certificates are available upon request.*
 
 ## Additional Qualifications & Skills
 

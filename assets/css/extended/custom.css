@@ -47,8 +47,8 @@
     flex-shrink: 0 !important;
 }
 
-/* Mobile responsive: two-line layout - logo on first line, menu on second line */
-@media screen and (max-width: 768px) {
+/* Mobile and tablet responsive: two-line layout - logo on first line, menu on second line */
+@media screen and (max-width: 1024px) {
     .nav {
         flex-direction: column !important;
         flex-wrap: wrap !important;

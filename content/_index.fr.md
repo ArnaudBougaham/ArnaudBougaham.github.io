@@ -1,5 +1,5 @@
 ---
-title: "À propos"
+title: "Arnaud Bougaham"
 date: 2025-01-27
 draft: false
 featured_image: "/images/photos/profile.jpg"
@@ -10,11 +10,11 @@ translationKey: "_index"
 
 <!-- ## Hi there 👋 -->
 
-Je suis **Arnaud Bougaham**, docteur/chercheur à l'Université de Namur et ingénieur en technologies Ooérationnelles chez AISIN Europe à Mons, Belgique, spécialisé en intelligence artificielle appliquée. Je développe des modèles génératifs pour la détection d'anomalies avec contraintes qualité pour des applications industrielles et médicales.
+Je suis **Arnaud Bougaham**, ingénieur en technologies opérationnelles chez AISIN Europe à Mons, et chercheur à l'Université de Namur (Belgique), spécialisé en intelligence artificielle appliquée. Je développe des modèles génératifs pour la détection d'anomalies avec contraintes qualité pour des applications industrielles et médicales.
 
 ### Focus Actuel
 
-- 🎓 **Doctoratat en Sciences** (2020-2025) à l'Université de Namur, supervisé par Prof. Benoît Frénay et Prof. Isabelle Linden
+- 🎓 **Doctoratat en Sciences** à l'Université de Namur (2020-2025), supervisé par Prof. Benoît Frénay et Prof. Isabelle Linden
 - 💼 **Ingénieur Technologies Opérationnelles** chez AISIN Europe (2008-Présent), contribuant à la transformation numérique
 - 🔬 **Focus de Recherche**: Modèles génératifs et contraintes de qualité pour la détection d'anomalies dans les images industrielles et médicales
 - 📚 **Enseignement**: Cours IA & Big Data dans les écoles d'ingénieurs et universités

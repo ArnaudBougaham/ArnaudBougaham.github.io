@@ -27,14 +27,25 @@ translationKey: "education"
 
 **Activités de Recherche:**
 - **Chercheur Invité au LIRMM** (Laboratoire d'Informatique, de Robotique et de Microélectronique de Montpellier), Montpellier, France
-  - *1er au 31 juillet 2024*
+  - *Juillet 2024*
   - Méthodes de détection d'anomalies. Application à la caractérisation de la réceptivité des patients dans le coma
   - Collaboration de recherche internationale et échange de connaissances
   - [Page Chercheurs Invités LIRMM](https://www.lirmm.fr/icar/guest.html)
 
+**Cours en ligne & Certifications:**
+- **Spécialisation Fondamentaux du Génie Logiciel Appliqué** - IBM (Février 2024)
+- **Spécialisation IA pour la Médecine** - DeepLearning.AI (Janvier 2024)
+- **Spécialisation Ingénierie Machine Learning pour la Production (MLOps)** - DeepLearning.AI (Décembre 2023)
+- **Spécialisation Mathématiques pour le Machine Learning et la Science des Données** - Coursera (Septembre 2023)
+- **Spécialisation Réseaux Antagonistes Génératifs (GANs)** - Coursera (Juin 2023)
+- **Spécialisation Apprentissage Profond** - Coursera (Mars 2023)
+- **Spécialisation Machine Learning** - Coursera (Décembre 2022)
+- **Spécialisation Mathématiques pour le Machine Learning** - Imperial College London (Octobre 2022)
+- **Certificat Universitaire Hands on AI** - Université de Mons (UMons) (Avril 2022)
+
 ### Master en Électronique et Télécommunication
 **Université Polytechnique de Catalogne (Universitat Politècnica de Catalunya)**
-*2006 - 2007*
+*2006 - 2007* ERASMUS
 Barcelone, Espagne
 
 - Spécialisé en systèmes électroniques et télécommunications
@@ -47,6 +58,10 @@ Valenciennes, France
 
 - Fondations en technologies de l'information et de la communication
 - Fondamentaux en informatique et ingénierie
+
+---
+
+*Tous les certificats de diplôme sont disponibles sur demande.*
 
 ## Qualifications & Compétences Supplémentaires
 

@@ -10,7 +10,7 @@ translationKey: "certifications"
 ### Certificat Universitaire Hands on AI
 **Organisme Émetteur:** Université de Mons (UMons)  
 **Date d'Émission:** Avril 2022  
-**Description:** Certificat universitaire en Hands on AI, axé sur les applications pratiques de l'intelligence artificielle.
+**Description:** Certificat universitaire Hands on AI, axé sur les applications pratiques de l'intelligence artificielle.
 
 ---
 

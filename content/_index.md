@@ -1,5 +1,5 @@
 ---
-title: "About"
+title: "Arnaud Bougaham"
 date: 2025-01-27
 draft: false
 featured_image: "/images/photos/profile.jpg"
@@ -10,11 +10,11 @@ translationKey: "_index"
 
 <!-- ## Hi there 👋 -->
 
-I'm **Arnaud Bougaham**, a Ph.D. Research Scientist at the University of Namur and Operation Technologies Engineer at AISIN Europe in Mons, Belgium, specialized in Applied Artificial Intelligence. I develop generative models for quality-constrained anomaly detection in industrial and medical applications.
+I'm **Arnaud Bougaham**, an Operation Technologies Engineer at AISIN Europe in Mons, and Ph.D. Research Scientist at the University of Namur (Belgium), specialized in Applied Artificial Intelligence. I develop generative models for quality-constrained anomaly detection in industrial and medical applications.
 
 ### Current Focus
 
-- 🎓 **Ph.D. in Sciences** (2020-2025) at University of Namur, supervised by Prof. Benoît Frénay and Prof. Isabelle Linden
+- 🎓 **Ph.D. in Sciences** at University of Namur (2020-2025), supervised by Prof. Benoît Frénay and Prof. Isabelle Linden
 - 💼 **Operational Technologies Engineer** at AISIN Europe (2008-Present), contributing to digital transformation
 - 🔬 **Research Focus**: Generative models and quality constraints for anomaly detection in industrial and medical images
 - 📚 **Teaching**: AI & Big Data courses in engineering schools and universities

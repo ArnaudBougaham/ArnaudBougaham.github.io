@@ -19,7 +19,7 @@
 <nav class="paginav">
   {{- if gt $currentIndex 0 -}}
   {{- $prevPage := index $pages (sub $currentIndex 1) -}}
-  <a class="prev" href="{{ $prevPage.Permalink }}">
+  <a class="prev" href="{{ $prevPage.Permalink }}" target="_blank" rel="noopener noreferrer">
     <span class="title">« {{ i18n "prev_page" }}</span>
     <br>
     <span>{{- $prevPage.Title -}}</span>
@@ -27,7 +27,7 @@
   {{- end -}}
   {{- if lt $currentIndex (sub (len $pages) 1) -}}
   {{- $nextPage := index $pages (add $currentIndex 1) -}}
-  <a class="next" href="{{ $nextPage.Permalink }}">
+  <a class="next" href="{{ $nextPage.Permalink }}" target="_blank" rel="noopener noreferrer">
     <span class="title">{{ i18n "next_page" }} »</span>
     <br>
     <span>{{- $nextPage.Title -}}</span>

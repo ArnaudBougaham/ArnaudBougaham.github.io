@@ -47,6 +47,10 @@ theme = 'PaperMod'
         imageWidth = 1200
         imageHeight = 1560
       [[languages.en.params.socialIcons]]
+        name = "cv"
+        url = "/Resume_ArnaudBougaham_2025_anon.pdf"
+        title = "Download Resume (PDF)"
+      [[languages.en.params.socialIcons]]
         name = "github"
         url = "https://github.com/ArnaudBougaham"
       [[languages.en.params.socialIcons]]
@@ -62,10 +66,6 @@ theme = 'PaperMod'
         name = "link"
         url = "https://researchportal.unamur.be/en/persons/abougaha/"
         title = "Research Portal"
-      [[languages.en.params.socialIcons]]
-        name = "cv"
-        url = "/Resume_ArnaudBougaham_2025_anon.pdf"
-        title = "Download Resume (PDF)"
     [[languages.en.menu.main]]
       identifier = "home"
       name = "Home"
@@ -110,7 +110,7 @@ theme = 'PaperMod'
     [languages.fr.params]
       env = 'production'
       title = 'Arnaud Bougaham'
-      description = "Chercheur Scientifique | Docteur | Intelligence Artificielle Appliquée | Imagerie Industrielle & Médicale | Machine Learning | Détection d'Anomalies"
+      description = "Chercheur | Docteur | Intelligence Artificielle Appliquée | Imagerie Industrielle & Médicale | Machine Learning | Détection d'Anomalies"
       keywords = ["Recherche", "IA", "Machine Learning", "Détection d'Anomalies", "Ph.D.", "Informatique"]
       author = 'Arnaud Bougaham'
       images = ['/images/photos/profile.jpg']
@@ -133,11 +133,15 @@ theme = 'PaperMod'
       [languages.fr.params.profileMode]
         enabled = true
         title = "Arnaud Bougaham"
-        subtitle = "Chercheur Scientifique | Docteur | Ingénieur Technologies Opérationnelles"
+        subtitle = "Chercheur | Docteur | Ingénieur Technologies Opérationnelles"
         imageUrl = "images/photos/profile.jpg"
         imageTitle = "Arnaud Bougaham"
         imageWidth = 1200
         imageHeight = 1560
+      [[languages.fr.params.socialIcons]]
+        name = "cv"
+        url = "/Resume_ArnaudBougaham_2025_anon.pdf"
+        title = "Télécharger CV (PDF)"
       [[languages.fr.params.socialIcons]]
         name = "github"
         url = "https://github.com/ArnaudBougaham"
@@ -154,10 +158,6 @@ theme = 'PaperMod'
         name = "link"
         url = "https://researchportal.unamur.be/fr/persons/abougaha/"
         title = "Portail de Recherche"
-      [[languages.fr.params.socialIcons]]
-        name = "cv"
-        url = "/Resume_ArnaudBougaham_2025-1.pdf"
-        title = "Télécharger CV (PDF)"
     [[languages.fr.menu.main]]
       identifier = "home"
       name = "Accueil"
