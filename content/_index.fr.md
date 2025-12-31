@@ -42,6 +42,7 @@ Je suis **Arnaud Bougaham**, ingénieur en technologies opérationnelles chez AI
 
 ### Contact
 
+- **Email**: [arnaud_bougaham@yahoo.fr](mailto:arnaud_bougaham@yahoo.fr)
 - **LinkedIn**: [linkedin.com/in/arnaud-bougaham](https://linkedin.com/in/arnaud-bougaham)
 - **GitHub**: [github.com/ArnaudBougaham](https://github.com/ArnaudBougaham)
 - **ORCID**: [0000-0003-0467-6991](https://orcid.org/0000-0003-0467-6991)

@@ -41,15 +41,14 @@ theme = 'PaperMod'
       [languages.en.params.profileMode]
         enabled = true
         title = "Arnaud Bougaham"
-        subtitle = "Research Scientist | Ph.D. | Operational Technologies Engineer"
+        subtitle = "Research Scientist | Ph.D. | Operational Technologies Engineer | Lecturer"
         imageUrl = "images/photos/profile.jpg"
         imageTitle = "Arnaud Bougaham"
         imageWidth = 1200
         imageHeight = 1560
-      [[languages.en.params.socialIcons]]
-        name = "cv"
-        url = "/Resume_ArnaudBougaham_2025_anon.pdf"
-        title = "Download Resume (PDF)"
+        [[languages.en.params.profileMode.buttons]]
+          name = "📄 Download Resume (PDF)"
+          url = "/Resume_ArnaudBougaham_2026_anon.pdf"
       [[languages.en.params.socialIcons]]
         name = "github"
         url = "https://github.com/ArnaudBougaham"
@@ -58,7 +57,7 @@ theme = 'PaperMod'
         url = "https://linkedin.com/in/arnaud-bougaham"
       [[languages.en.params.socialIcons]]
         name = "email"
-        url = "mailto:arnaud.bougaham@unamur.be"
+        url = "mailto:arnaud_bougaham@yahoo.fr"
       [[languages.en.params.socialIcons]]
         name = "orcid"
         url = "https://orcid.org/0000-0003-0467-6991"
@@ -133,15 +132,14 @@ theme = 'PaperMod'
       [languages.fr.params.profileMode]
         enabled = true
         title = "Arnaud Bougaham"
-        subtitle = "Chercheur | Docteur | Ingénieur Technologies Opérationnelles"
+        subtitle = "Chercheur | Docteur | Ingénieur Technologies Opérationnelles | Enseignant"
         imageUrl = "images/photos/profile.jpg"
         imageTitle = "Arnaud Bougaham"
         imageWidth = 1200
         imageHeight = 1560
-      [[languages.fr.params.socialIcons]]
-        name = "cv"
-        url = "/Resume_ArnaudBougaham_2025_anon.pdf"
-        title = "Télécharger CV (PDF)"
+        [[languages.fr.params.profileMode.buttons]]
+          name = "📄 Télécharger CV (PDF)"
+          url = "/Resume_ArnaudBougaham_2026_anon.pdf"
       [[languages.fr.params.socialIcons]]
         name = "github"
         url = "https://github.com/ArnaudBougaham"
@@ -150,7 +148,7 @@ theme = 'PaperMod'
         url = "https://linkedin.com/in/arnaud-bougaham"
       [[languages.fr.params.socialIcons]]
         name = "email"
-        url = "mailto:arnaud.bougaham@unamur.be"
+        url = "mailto:arnaud_bougaham@yahoo.fr"
       [[languages.fr.params.socialIcons]]
         name = "orcid"
         url = "https://orcid.org/0000-0003-0467-6991"
