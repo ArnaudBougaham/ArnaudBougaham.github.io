@@ -9,7 +9,7 @@ translationKey: "certifications"
 
 ### Hands on AI University Certificate
 **Issuing Organization:** University of Mons (UMons)  
-**Issue Date:** April 2022
+**Issue Date:** April 2022  
 **Description:** University certificate in Hands of AI, focusing on practical applications of artificial intelligence.
 
 ---
